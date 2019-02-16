@@ -46,10 +46,12 @@ axios({
         $('h1').css('font-size', '50px');
         $('h1').css('color', 'white');
         $('h1').css('text-align', 'center');
+        // $('h2').css('margin-top', '10px');
         // $('h2').css('color', 'white');
         // $('h2').css('text-align', 'right');
         // $('h2').css('margin-top', '0');
         $('body').css('margin-top', '200px');
+
 
     })
 
@@ -77,6 +79,9 @@ axios({
 
 // Time
 
-(moment().format('h:mm:ss '));
+// (moment().format('h:mm:ss '));
 
 // moment().format('LT');
+
+const time = moment().format('h:mm a'); // get time
+$("#time").text(time); // show on html
